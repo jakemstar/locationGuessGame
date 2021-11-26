@@ -7,17 +7,19 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="detailsItem">
-            <h2 id="roomHeader">OFFLINE</h2>
-            <ul id="userList"></ul>
-        </div>
         <div class="notStarted">
-            <p>Not game part</p>
+            <div>
+                <h2 id="roomHeader">OFFLINE</h2>
+                <ul id="userList"></ul>
+            </div>
             <button id="readyButton">ready</button>
             <button id="startButton">start game</button>
         </div>
         <div class="started">
-            <p>Game part</p>
+            <h1 id="locationTitle"></h1>
+            <img id="locationImage">
+            <button id="hideButton">Show/Hide</button>
+            <button id="returnButton">game over</button>
         </div>
 
         <script
