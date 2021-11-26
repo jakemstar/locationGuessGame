@@ -1,0 +1,23 @@
+.menuContainer{
+    margin-top: 5em;
+}
+
+.displayBlock{
+    display:block;
+}
+
+.roomSelect{
+    max-width: 40%;
+}
+
+.littleMargin{
+    margin: 1rem 0rem;
+}
+
+.littlePadding{
+    padding: 0.6rem 2rem;
+}
+
+.displayInline{
+    display: inline;
+}

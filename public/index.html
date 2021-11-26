@@ -3,21 +3,30 @@
     <head>
         <title>Spy Game</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <form action="game.html">
-            <div class="form-control littleMargin">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="Enter username..." autocomplete="off" required />
+        <div class="container menuContainer">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 text-center">
+                    <form action="game.html">
+                        <div class="form-control littleMargin">
+                            <label class="displayBlock" for="username">Enter Username</label>
+                            <input type="text" name="username" id="username" placeholder="Enter username..." autocomplete="off" required />
+                        </div>
+                        <div class="form-control littleMargin">
+                            <label class="displayBlock" for="room">Select Room</label>
+                            <select class="form-select roomSelect displayInline" name="room" id="room">
+                                <option value="Room">Room</option>
+                            </select>
+                        </div>
+                        <button class="submitButton btn btn-outline-dark" type="submit">Join</button>
+                    </form>
+                </div>
+                <div class="col-md-3"></div>
             </div>
-            <div class="form-control littleMargin">
-                <label for="room">Room</label>
-                <select name="room" id="room">
-                    <option value="Room">Room</option>
-                </select>
-            </div>
-            <button class="submitButton" type="submit" class="btn">Join</button>
-        </form>
+        </div>
     </body>
 </html>
