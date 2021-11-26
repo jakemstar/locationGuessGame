@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Spy Game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="detailsItem">
+            <h2 id="roomHeader">OFFLINE</h2>
+            <ul id="userList"></ul>
+        </div>
+        <div class="notStarted">
+            <p>Not game part</p>
+            <button id="readyButton">ready</button>
+            <button id="startButton">start game</button>
+        </div>
+        <div class="started">
+            <p>Game part</p>
+        </div>
+
+        <script
+          src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+          crossorigin="anonymous">
+        </script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" 
+          integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer">
+        </script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
