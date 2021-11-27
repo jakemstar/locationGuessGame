@@ -4,8 +4,6 @@ const { username, room } = Qs.parse(location.search, {
     ignoreQueryPrefix: true
 });
 
-$('.started').hide();
-
 socket.emit('joinRoom', {username, room});
 
 socket.on('roomUsers', ({ room, users }) => {

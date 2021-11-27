@@ -64,8 +64,13 @@
 
 #locationImage{
     border-radius: .25rem;
+
 }
 
 .iconPadding{
     padding-right: .3em;
+}
+
+.hidden{
+    display: none;
 }
