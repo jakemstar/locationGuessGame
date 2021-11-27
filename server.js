@@ -7,7 +7,7 @@ const io = new Server(server);
 const path = require('path');
 const { userJoin, getCurrentUser, userLeave, getRoomUsers, getRoomUsersReady, setGameRunning, getGameRunning, resetUsersReady, setImposter, setNewLeader, resetImposter } = require('./utils/users');
 const { getRandomLocation } = require('./utils/locations');
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5000;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
