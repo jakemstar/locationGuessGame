@@ -56,3 +56,7 @@
     outline: none;
     box-shadow: none;
 }
+
+#locationImage{
+    border-radius: .25rem;
+}
