@@ -28,7 +28,7 @@ socket.on('leader status', (leader) => {
 socket.on('startGame', ({ location, sus }) => {
     var hidden = false;
     if(sus){
-        $('#locationTitle').text('Imposter');
+        $('#locationTitle').text('Spy');
         $('#locationImage').attr('src', 'images/sus.png');
 
         $('#hideButton').click(function() {
@@ -38,7 +38,7 @@ socket.on('startGame', ({ location, sus }) => {
                 hidden = true;
             }
             else{
-                $('#locationTitle').text('Imposter');
+                $('#locationTitle').text('Spy');
                 $('#locationImage').attr('src', 'images/sus.png');
                 hidden = false;
             }
