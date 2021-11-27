@@ -1,6 +1,6 @@
 {
-    "name": "Spy Game",
-    "short_name" : "SG",
+    "name": "Spyfall",
+    "short_name" : "SF",
     "start_url": "/index.html",
     "id": "/index.html",
     "scope" : "/",
