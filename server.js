@@ -47,9 +47,10 @@ io.on('connection', (socket) => {
         if (getRoomUsersReady(user.room)){
             setGameRunning(user.room, true);
             setImposter(user.room);
+            gameLocation = getRandomLocation();
             //getRoomUsers(user.room).forEach(user => io.to(user.id).emit('leader status', user.leader));
             getRoomUsers(user.room).forEach(user => io.to(user.id).emit('startGame', { 
-                location: getRandomLocation(),
+                location: gameLocation,
                 sus: user.sus 
             }
         ));
