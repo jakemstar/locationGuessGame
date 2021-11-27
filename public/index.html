@@ -32,6 +32,8 @@
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6 text-center">
+                    <p>Welcome! This is my own take on the game Spyfall. Start by entering a username and the room you would like to join.</p>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#rulesModal">What are the rules?</button>
                     <form action="game.html">
                         <div class="form-control littleMargin">
                             <label class="displayBlock" for="username">Enter Username</label>
@@ -47,6 +49,30 @@
                 <div class="col-md-3"></div>
             </div>
         </div>
+        <div class="modal fade" id="rulesModal" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="rulesModalLabel">Rules</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Upon the start of this game everyone, except one person (the imposter), is given a location. Starting with the leader
+                        (the person who joined first) and going in an order that the players decide, each player takes a turn asking
+                        one other player one question with the goal of finding who is the imposter. If a player suspects another player, they
+                        can raise a vote and if a majority of players agree the suspect is guilty, the suspect reveals whether or not they
+                        are the imposter. If the suspect is not the imposter, the imposter wins. If the suspect is the imposter the players win.
+                        If the imposter can guess the location before being voted out, they win.
+                        <br><br>
+                        <i>*note these rules are sugguested guidelines but play however you and others want to!</i>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script src="app.js"></script>
     </body>
 </html>
