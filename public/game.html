@@ -8,19 +8,33 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="notStarted">
-            <div>
-                <h2 id="roomHeader">OFFLINE</h2>
-                <ul id="userList"></ul>
+        <div class="container menuContainer">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 text-center">
+                    <div class="notStarted">
+                        <div>
+                            <h2 id="roomHeader">Game In Progress</h2>
+                            <ul id="userList" class="list-group"></ul>
+                        </div>
+                        <div class="roomGameButton">
+                            <button id="readyButton" class="btn btn-outline-dark">Toggle Ready</button>
+                            <button id="startButton" class="btn btn-outline-dark">Start Game</button>
+                        </div>
+                    </div>
+                    <div class="started">
+                        <h1 id="locationTitle"></h1>
+                        <div class="imageContainer">
+                            <img id="locationImage">
+                        </div>
+                        <div>
+                            <button id="hideButton" class="btn btn-outline-dark">Show/Hide</button>
+                            <button id="returnButton" class="btn btn-outline-dark">Finish</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
             </div>
-            <button id="readyButton">ready</button>
-            <button id="startButton">start game</button>
-        </div>
-        <div class="started">
-            <h1 id="locationTitle"></h1>
-            <img id="locationImage">
-            <button id="hideButton">Show/Hide</button>
-            <button id="returnButton">game over</button>
         </div>
 
         <script

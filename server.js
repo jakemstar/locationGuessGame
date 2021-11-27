@@ -35,7 +35,7 @@ io.on('connection', (socket) => {
 
     socket.on('userReady', () => {
         user = getCurrentUser(socket.id);
-        user.ready = true;
+        user.ready = !user.ready;
         io.in(user.room).emit('roomUsers', {
             room: user.room,
             users: getRoomUsers(user.room)

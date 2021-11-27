@@ -11,7 +11,7 @@ socket.emit('joinRoom', {username, room});
 socket.on('roomUsers', ({ room, users }) => {
     roomHeader.innerText = `Users In ${room}`;
 
-    userList.innerHTML=`${users.map(user => `<li class="userListItem">${user.username} ready status: ${user.ready} leader status: ${user.leader}</li>`).join('')}`;
+    userList.innerHTML=`${users.map(user => `<li class="list-group-item">${user.username} <span class="${user.ready?"statusReady":"statusNotReady"}">${user.ready?"ready":"not ready"}<span></li>`).join('')}`;
 });
 
 socket.on('leader status', (leader) => {

@@ -21,3 +21,32 @@
 .displayInline{
     display: inline;
 }
+
+.statusNotReady{
+    background-color:red;
+    border-radius: .5em;
+    padding: .2em;
+}
+
+.statusReady{
+    background-color:green;
+    border-radius: .5em;
+    padding: .2em;
+}
+
+.roomGameButton{
+    margin-top: 1em;
+}
+
+#locationImage{
+    max-width: 500px;
+    max-height: 500px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.imageContainer{
+    height: 500px;
+    width: 500px;
+    margin: auto;
+}
